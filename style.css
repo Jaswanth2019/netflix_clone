@@ -17,7 +17,7 @@ body{
 .main .box{
     height: 70vh;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.7;
     background-color: black;
     position:absolute;
     top: 0;
@@ -43,7 +43,7 @@ nav button{
 }
 .hero{
     font-family: "Martel Sans", sans-serif;
-    height: 100%;
+    height: calc(100% - 60px);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@ nav button{
     font-size: 20px;
     position: relative;
     gap: 23px;
-    padding: 30px;
+    padding: 0 30px;
 }
 .hero> :nth-child(1){
     font-weight: 900;
@@ -69,4 +69,77 @@ nav button{
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(59, 59, 59);
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(229, 229, 229, 0);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 20px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+.btn-red-sn{
+    background-color: red;
+    color: white;
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.main input{
+    color: white;
+    padding: 7px 100px 8px 14px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(229, 229, 229, 0.5);
+}
+.first{
+    display: flex;
+    justify-content:center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 5;
+}
+.secImg video{
+    position: absolute;
+    top:51px;
+    right: 0px;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
 }
